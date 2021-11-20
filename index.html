@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <meta name="description" content="...">
+    <meta name="keywords" content="...">
+    <title>Веб студия</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/click-carousel.js"></script>
+    <script type="text/javascript">
+        $(function(){
+	    $("#container").clickCarousel({margin: 10});	
+});
+</script>
+<script>
+$(document).ready(function() {
+    $("a.topLink").click(function() {
+        $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top + "px"
+        }, {
+            duration: 500
+        });
+        return false;
+    });
+});
+</script>
+<script type="text/javascript">
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#toTop').fadeIn();
+} else {
+$('#toTop').fadeOut();
+}
+});
+$('#toTop').click(function() {
+$('body,html').animate({scrollTop:0},800);
+});
+});
+</script>
+
+</head>
+<body id="page">
+    <section id="header">
+        <div class="layout">
+            <div class="layout1">
+            <div class="header-left">
+            <a href="#" title="указывается для seo-продвижения"><img src="images/logo.png" class="logo" alt=""></a></div>
+            <div class="header-right">
+            <menu>
+                <li><a href="#header" class="topLink">Начало</a></li>
+                <li><a href="#services" class="topLink">Услуги</a></li>
+                <li><a href="#portfolio" class="topLink">Портфолио</a></li>
+                <li><a href="#about" class="topLink">О нас</a></li>
+                <li><a href="#contact" class="topLink">Контакты</a></li>
+            </menu>
+            </div>
+            </div>
+            <div class="clr"></div>
+            <span>Добро пожаловать<br>в нашу студию!</span>
+            <h1>Мы рады вам</h1>
+            <a href="#services" id="learnmore" class="topLink">Узнать больше</a>
+        </div>
+    </section>
+     
+    <section id="services">
+     <div class="layout">
+         <h2>Услуги</h2>
+         <span class="serv">Чем мы можем вам помочь</span>
+         <div class="box_services">
+         <div class="box3">
+             <img src="images/basket.png" alt="basket">
+             <h3>E-Commerce</h3>
+              <span>Большой опыт работы в E-Commerce позволяет нам создавать реально эффективные продающие сайты</span>
+         </div>
+         <div class="box3">
+             <img src="images/laptop.png" alt="laptop">
+             <h3>Responsive Web</h3>
+             <span>Всегда применяем только адаптивные технологии с использованием HTML5 и CSS3</span>
+        </div>
+         <div class="box3">
+             <img src="images/lock.png" alt="lock">
+             <h3>Web Security</h3>
+            <span>Являемся разработчиками ПО для усиления безопасности веб-сайтов, защитили более 1400 проектов</span>
+        </div>
+        </div>
+    </div> 
+    </section>    
+    
+ <section id="portfolio">
+     <div class="layout3">
+         <h2>Наше портфолио</h2>
+         <span class="serv">Что мы сделали для любимых клиентов?</span>
+        <div class="portfolio_box">
+         <div class="box3">
+             <a href="#" target="_blank">
+             <img src="images/portfolio1.jpg" alt="portfolio1">
+             <div><span>Посмотреть</span></div>
+             </a>
+             <h3>Ebony & Ivory</h3>
+             <span class="port">Брендинг</span>
+         </div>
+          <div class="box3">
+             <a href="#" target="_blank">
+             <img src="images/portfolio2.jpg" alt="portfolio2">
+             <div><span>Посмотреть</span></div>
+             </a>
+             <h3>Smart Stationary</h3>
+             <span class="port">Полиграфия</span>
+         </div>
+          <div class="box3 last">
+             <a href="#" target="_blank">
+             <img src="images/portfolio3.jpg" alt="portfolio3">
+             <div><span>Посмотреть</span></div>
+             </a>
+             <h3>Clever Poster</h3>
+             <span class="port">Полиграфия</span>
+         </div>
+          <div class="box3">
+             <a href="#" target="_blank">
+             <img src="images/portfolio4.jpg" alt="portfolio4">
+             <div><span>Посмотреть</span></div>
+             </a>
+             <h3>Vinyl Record</h3>
+             <span class="port">Обложка продукта</span>
+         </div>
+          <div class="box3">
+             <a href="#" target="_blank">
+             <img src="images/portfolio5.jpg" alt="portfolio5">
+             <div><span>Посмотреть</span></div>
+             </a>
+             <h3>Treehouse Template</h3>
+             <span class="port">Веб дизайн</span>
+         </div>
+          <div class="box3 last">
+             <a href="#" target="_blank">
+             <img src="images/portfolio6.jpg" alt="portfolio6">
+             <div><span>Посмотреть</span></div>
+             </a>
+             <h3>Burned Logo</h3>
+              <span class="port">Брендинг</span>
+         </div>
+        </div> 
+        </div>
+    </section> 
+    
+    <section id="about">
+     <div class="layout layout4">
+         <h2>О нас</h2>
+         <span class="serv">Кто мы такие</span>
+         <div class="border">
+             <div class="level">
+                 <img src="images/about-01.jpg" alt="about-01">
+                 <h3>Июль 2018</h3>
+                 <h4>Наши скромные начинания</h4>
+                 <p>Всё начиналось с небольшого офиса и двух человек в нём. С двух ноутбуков, большого энтузиазма и желания изменить мир.</p>
+             </div>
+              <div class="level">
+                 <img src="images/about-02.jpg" alt="about-02">
+                 <h3>Январь 2019</h3>
+                 <h4>Первая премия за дизайн</h4>
+                 <p>В январе 2019 мы получили первую премию в номинации "Лучший дизайн" по оценке Российского интернет форума. Мы радовались этому как дети, это действительно очень приятно!</p>
+             </div>
+              <div class="level">
+                 <img src="images/about-03.jpg" alt="about-03">
+                 <h3>Декабрь 2020</h3>
+                 <h4>Первые неудачи</h4>
+                 <p>Быть всегда успешными и везучими получается не всегда, и у нас как и у любой компании тоже были свои проблемы и неудачи. Но мы не отчаивались, а просто шли дальше и делали свое любимое дело.</p>
+             </div>
+              <div class="level">
+                 <img src="images/about-04.jpg" alt="about-04">
+                 <h3>Февраль 2021</h3>
+                 <h4>Наш триумф</h4>
+                 <p>Во многом мы благодарны нашим любимым клиентам и партнерам. Без них мы бы не смогли реализовать свой потенциал. В феврале 2021 в команде было уже 29 человек. И мы до сих пор растем!</p>
+             </div>
+             <div class="level">
+                 <a href="#"><img src="images/about-05.jpg"></a>
+             </div>
+         </div>
+        </div> 
+    </section>    
+    
+    <section id="team">
+         <div class="layout">
+             <h2>Наша команда</h2>
+             <span class="serv">Наши ведущие специалисты</span>
+             <div class="layout5">
+             <div class="box3">
+                 <img src="images/team1.jpg">
+                 <h3>Павел</h3>
+                 <p>Дизайнер</p> 
+                 <div class="social">
+                     <a href="https://twitter.com/durov" class="tw" target="_blank"></a>
+                     <a href="https://www.facebook.com/durov" class="fb" target="_blank"></a>
+                     <a href="https://www.pinterest.ru/" class="pint" target="_blank"></a>
+                 </div>
+             </div>
+              <div class="box3">
+                  <img src="images/team2.jpg">
+                  <h3>Марк</h3>
+                  <p>Программист</p>
+                  <div class="social">
+                     <a href="https://twitter.com/finkd" class="tw" target="_blank"></a>
+                     <a href="https://www.facebook.com/zuck" class="fb" target="_blank"></a>          
+                 </div>
+             </div>
+              <div class="box3">
+                  <img src="images/team3.jpg">
+                  <h3>Арни</h3>
+                  <p>Маркетолог</p> 
+                  <div class="social">
+                    <a href="https://twitter.com/Schwarzenegger" class="tw" target="_blank"></a>
+                    <a href="https://www.facebook.com/arnold/" class="fb" target="_blank"></a>
+                 </div>
+             </div>
+            </div>
+             <div class="clr"></div>
+             <p class="resume">Мы все любим свою работу и делаем её только на отлично.<br>Иначе нас бы не было.
+        </div> 
+    </section>    
+    
+    <section id="partner">
+     <div class="layout layout6"">
+         <div id="slider">
+            <div id="container">
+                 <img src="part/part1.jpg" alt="part1">
+                 <img src="part/part2.jpg" alt="part2">
+                 <img src="part/part3.jpg" alt="part3">
+                 <img src="part/part4.jpg" alt="part4">
+                 <img src="part/part5.jpg" alt="part5">
+                 <img src="part/part6.jpg" alt="part6">
+                 <img src="part/part7.jpg" alt="part7">
+             </div>
+             <img id="carouselLeft" src="part/leftArr.jpg" alt="Left Arrow">
+	         <img id="carouselRight" src="part/rightArr.jpg" alt="Right Arrow">
+         </div>
+        </div> 
+    </section>   
+      
+    <section id="map">
+      <div class="layout layout7">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1997.513638925066!2d30.307063216071352!3d59.956802931882784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963141499f00b9%3A0x630ff799025ac60a!2z0KPQvdC40LLQtdGA0YHQuNGC0LXRgiDQmNCi0JzQng!5e0!3m2!1sru!2sru!4v1636994072833!5m2!1sru!2sru" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div> 
+    </section>
+    
+     <section id="contact">
+     <div class="layout">
+          <h2>Напишите нам</h2>
+             <span class="serv">Пишите, мы очень рады будем пообщаться с вами</span>       
+          <form>
+            <div class="layout8">
+              <div class="box2">
+              <ul>
+                <li><input type="text" placeholder="ВАШЕ ИМЯ *"></li>
+                <li><input type="text" placeholder="ВАШ E-MAIL *"></li>
+                <li><input type="text" placeholder="ВАШ ТЕЛЕФОН *"></li>
+              </ul>
+              </div>
+              <div class="box2"><textarea placeholder="ВАШЕ СООБЩЕНИЕ *"></textarea></div>
+              </div>
+              <button>Отправить</button>
+         </form> 
+    </div>
+    </section>
+    
+    <footer>
+      <div class="layout">
+        <div class="layout9">
+          <div class="box3"><p>&copy; Copyright <?php echo date(Y) ?> FreebiesXpress.com</p></div>
+          <div class="box3">
+               <a href="https://twitter.com/" class="twt" target="_blank"></a>
+               <a href="https://www.facebook.com/" class="fbk" target="_blank"></a>
+               <a href="https://www.pinterest.ru/" class="pintr" target="_blank"></a>
+          </div>              
+        </div>
+          <div class="box3"></div>
+        </div> 
+    </footer>
+    <div id="toTop">^ Наверх</div>
